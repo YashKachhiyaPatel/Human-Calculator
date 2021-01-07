@@ -149,7 +149,7 @@ fetch.addEventListener('click',() =>{
 			function(childsnapshot){
 				let fname = childsnapshot.val().firstname;
 				let score = childsnapshot.val().score;
-				
+				if (score<0) {score=0;}
 				addtoList(fname,score);
 			});
 
