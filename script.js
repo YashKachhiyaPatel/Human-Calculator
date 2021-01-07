@@ -178,7 +178,7 @@ function timer(){
 
   		    });
 
-			time_left.textContent = 40;
+			time_left.textContent = 60;
 			c = 0;
 		}
 
