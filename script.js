@@ -27,7 +27,7 @@ var fetch = document.getElementById('fetch');
 var row = 1;
 var stno = 0;
 
-const op = ["+","-","*","/"];
+const op = ["+","-","*","%"];
 
 let f,s,o;
 let c=0;
@@ -73,7 +73,7 @@ start.addEventListener("click",function(){
   	    if (o == "+") { final = f+s; } 
  	     if (o == "-") { final = f-s; } 
  	     if (o == "*") { final = f*s; } 
- 	     if (o == "/") { final = f/s; } 
+ 	     if (o == "%") { final = f%s; } 
 	timer();
 
 });
@@ -105,7 +105,7 @@ answer.addEventListener("keypress",function(e){
  	     if (o == "+") { final = f+s; } 
  	     if (o == "-") { final = f-s; } 
  	     if (o == "*") { final = f*s; } 
- 	     if (o == "/") { final = f/s; } 
+ 	     if (o == "%") { final = f%s; } 
 
 	}
 
