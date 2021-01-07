@@ -169,7 +169,9 @@ function timer(){
 			resultid.style.display = "block";
 			resultid.innerHTML = `<h3>your score : ${c}</h3>`;
 
-
+		       if (c<0) {
+				score = 0;
+			}
             database.ref('users/'+ name).set({
   			firstname:name,
   			score:c
